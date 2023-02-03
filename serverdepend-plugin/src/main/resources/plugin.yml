@@ -1,0 +1,16 @@
+main: online.flowerinsnow.serverdepend.ServerDependPlugin
+name: ServerDepend
+version: ${project.version}
+author: flowerinsnow
+commands:
+  serverdepend:
+permissions:
+  serverdepend.*:
+    children:
+      - serverdepend.reload
+      - serverdepend.mode
+    default: op
+  serverdepend.reload:
+    default: op
+  serverdepend.mode:
+    default: op
